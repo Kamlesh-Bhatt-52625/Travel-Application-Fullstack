@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 const { connection } = require("./config/db");
 const authController = require("./controllers/authController");
+const roomController = require("./controllers/roomController");
 
 const app = express();
 
@@ -14,6 +15,7 @@ mongoose.set("strictQuery", false);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use("/auth", authController);
+app.use("/room", roomController);
 
 // Starting the Server
 app.listen(process.env.PORT, async () => {
