@@ -1,0 +1,74 @@
+.container {
+  height: calc(100vh - 65px);
+  width: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.imgWrapper {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+}
+
+.imgWrapper > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.titles {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+
+.titles > .title {
+  color: #efefef;
+  font-weight: bold;
+  font-size: 70px;
+}
+
+.titles > .title > span {
+  color: rgb(201, 136, 15);
+}
+
+.inputsContainer {
+  position: absolute;
+  top: 47%;
+  left: 8%;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  padding: 1.25rem 4rem;
+  background-color: #fff;
+  border-radius: 60px;
+  padding-right: 2.5rem;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.inputContainer > select {
+  padding: 0.2rem 0.6rem;
+  background-color: #f7f7f7;
+  color: rgb(254, 154, 53);
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border: 1px solid orange;
+  outline: none;
+  border-radius: 12px;
+}
+
+.inputContainer > span{
+    
+}

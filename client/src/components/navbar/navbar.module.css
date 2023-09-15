@@ -73,7 +73,6 @@
 
 .right > a {
   text-decoration: none;
-  color: inherit;
   font-size: 22px;
 }
 
@@ -88,4 +87,19 @@
   border-radius: 20px;
   cursor: pointer;
   transition: 150ms all;
+}
+
+.login:hover {
+  background-color: #fff;
+  color: #ee9d06;
+  border-color: #ee9d06;
+}
+
+.signup {
+  transition: 150ms all;
+  color: #000;
+}
+
+.signup:hover {
+  color: #555;
 }
